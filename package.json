@@ -1,0 +1,38 @@
+{
+  "name": "cssor",
+  "version": "1.0.0",
+  "description": "Browserify for CSS",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "vdemedes/cssor",
+  "author": {
+    "name": "Vadim Demedes",
+    "email": "vdemedes@gmail.com",
+    "url": "https://github.com/vdemedes"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "bin": {
+    "cssor": "cli.js"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "xo": {
+    "extends": "vdemedes",
+    "env": "node"
+  },
+  "devDependencies": {
+    "eslint-config-vdemedes": "^1.0.1",
+    "xo": "^0.12.1"
+  },
+  "dependencies": {
+    "arrify": "^1.0.1",
+    "get-stdin": "^5.0.1",
+    "meow": "^3.7.0",
+    "mz": "^2.1.0",
+    "resolve-from": "^2.0.0",
+    "rework": "^1.0.1"
+  }
+}
