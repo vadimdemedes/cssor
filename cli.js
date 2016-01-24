@@ -5,7 +5,7 @@
  * Dependencies
  */
 
-var resolveFrom = require('resolve-from');
+var resolveCwd = require('resolve-cwd');
 var getStdin = require('get-stdin');
 var arrify = require('arrify');
 var rework = require('rework');
@@ -54,7 +54,7 @@ input.then(function (source) {
 	var transformers = arrify(cli.flags.transform);
 
 	transformers.forEach(function (name) {
-		var path = resolveFrom(process.cwd(), name);
+		var path = resolveCwd(name);
 
 		processor.use(require(path)());
 	});
@@ -66,10 +66,8 @@ input.then(function (source) {
 	var output = processor.toString();
 
 	if (cli.flags.output) {
-		fs.writeFile(cli.flags.output, output, 'utf8');
+		fs.writeFile(cli.flags.output, output);
 	} else {
 		process.stdout.write(output);
 	}
-}).catch(function (err) {
-	console.error(err.stack);
 });

@@ -32,7 +32,7 @@
     "get-stdin": "^5.0.1",
     "meow": "^3.7.0",
     "mz": "^2.1.0",
-    "resolve-from": "^2.0.0",
+    "resolve-cwd": "^1.0.0",
     "rework": "^1.0.1"
   }
 }
