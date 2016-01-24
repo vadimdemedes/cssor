@@ -1,14 +1,14 @@
-# cssor
+# CSSOR
 
 <h1 align="center">
 	<br>
-	<img width="300" src="https://cdn.rawgit.com/vdemedes/cssor/master/media/logo.svg" alt="OhCrash">
+	<img width="300" src="https://cdn.rawgit.com/vdemedes/cssor/master/media/logo.svg" alt="CSSOR">
 	<br>
 	<br>
 	<br>
 </h1>
 
-Browserify for CSS.
+[Browserify](https://github.com/substack/node-browserify) for CSS.
 
 
 ## Installation
@@ -22,6 +22,7 @@ $ npm install --global cssor
 
 ```
 $ cssor --help
+
 	Usage
     $ cssor [options] [file]
 
