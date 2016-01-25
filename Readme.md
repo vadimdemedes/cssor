@@ -65,6 +65,23 @@ $ cssor -b styles
 ```
 
 
+## Recipes
+
+### Myth + @import for npm modules
+
+`myth` and `rework-npm` are required:
+
+```
+$ npm install myth rework-npm --save
+```
+
+Now, we are good to go:
+
+```
+$ cssor -t rework-npm -t myth input.css > output.css
+```
+
+
 ## License
 
 MIT © [Vadim Demedes](https://github.com/vdemedes)
